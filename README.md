@@ -1,0 +1,11 @@
+# Adpro - Tutorial 8
+
+## Aliyah Faza Qinthara (2206024726)
+
+### How many data your publisher program will send to the message broker in one run?
+
+The publisher program will send **5 messages** to the message broker in one run. Each `publish_event` function call sends one message, and there are 5 such calls in the `main` function.
+
+### The URL of the message broker
+
+The URL for the message broker is `amqp://guest:guest@localhost:5672`. This URL is used in both the publisher and subscriber programs, indicating that they are connecting to the same message broker. In a messaging system, the publisher sends messages and the subscriber receives those messages. The message broker (in this case, running at `localhost:5672`) is the intermediary that routes messages from publishers to subscribers. Therefore, if the publisher and subscriber are using the same URL for the message broker, they are part of the same messaging system, and the subscriber should be able to receive messages published by the publisher.
