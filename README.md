@@ -13,3 +13,6 @@ The URL for the message broker is `amqp://guest:guest@localhost:5672`. This URL 
 ### RabbitMQ
 
 ![Running](https://cdn.discordapp.com/attachments/1030834426126544907/1232334326536998972/image.png?ex=66291447&is=6627c2c7&hm=c79e9360c64bae6822862ca68ec22e99fb615023bbc908ccb80abc6d43615ede&)
+
+When I execute `cargo run` on the publisher (meaning I'm operating the publisher), it dispatches 5 events to the message broker. These events are subsequently received and handled by the subscriber.
+![Console](https://cdn.discordapp.com/attachments/1030834426126544907/1232336571466780753/image.png?ex=6629165e&is=6627c4de&hm=7d858958e732a5023ec081a6cf62ae5517918ff5a135e183f052849688101dcd&)
